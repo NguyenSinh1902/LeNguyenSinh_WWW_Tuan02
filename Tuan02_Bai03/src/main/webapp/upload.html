@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload to DB</title>
+</head>
+<body>
+<h2>File Upload to Database</h2>
+<form method="post" action="upload" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="firstName" required></td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td><input type="text" name="lastName" required></td>
+        </tr>
+        <tr>
+            <td>Portrait Photo:</td>
+            <td><input type="file" name="photo" required></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Save"></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
