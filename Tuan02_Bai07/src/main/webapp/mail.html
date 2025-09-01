@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Send Email</title>
+</head>
+<body>
+<h2>Send Email Form</h2>
+<form action="sendMail" method="post" enctype="multipart/form-data">
+    <label>Recipient:</label><br>
+    <input type="email" name="recipient" required><br><br>
+
+    <label>Subject:</label><br>
+    <input type="text" name="subject" required><br><br>
+
+    <label>Message:</label><br>
+    <textarea name="body" rows="6" cols="40" required></textarea><br><br>
+
+    <label>Attachment:</label><br>
+    <input type="file" name="attachment"><br><br>
+
+    <button type="submit">Send Email</button>
+</form>
+</body>
+</html>
