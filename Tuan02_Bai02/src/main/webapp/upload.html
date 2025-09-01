@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload multi-files</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h2 { margin-bottom: 20px; }
+        table { margin: auto; }
+        td { padding: 6px; }
+        input[type=submit], input[type=reset] {
+            padding: 6px 16px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h2>Upload multi-files</h2>
+    <form action="upload" method="post" enctype="multipart/form-data">
+        <table>
+            <tr><td>File #1:</td><td><input type="file" name="file1"></td></tr>
+            <tr><td>File #2:</td><td><input type="file" name="file2"></td></tr>
+            <tr><td>File #3:</td><td><input type="file" name="file3"></td></tr>
+            <tr><td>File #4:</td><td><input type="file" name="file4"></td></tr>
+            <tr><td>File #5:</td><td><input type="file" name="file5"></td></tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Upload">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
